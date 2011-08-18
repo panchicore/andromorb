@@ -113,6 +113,7 @@ INSTALLED_APPS = (
     'locations',
     'south',
     'django_extensions',
+    'gunicorn',
 )
 
 # A sample logging configuration. The only tangible logging
