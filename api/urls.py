@@ -6,7 +6,8 @@ from api.handlers import LocationHandler
 auth = HttpBasicAuthentication(realm='TestRealm')
 ad = {'authentication' : auth}
 
-location_handler = Resource(handler=LocationHandler, authentication=auth)
+#location_handler = Resource(handler=LocationHandler, authentication=auth)
+location_handler = Resource(handler=LocationHandler)
 
 urlpatterns = patterns('',
     url(r'^locations/(?P<location_id>[\d+])/$', location_handler),

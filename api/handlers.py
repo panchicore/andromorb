@@ -5,7 +5,7 @@ from django.contrib.gis.geos import Point
 class LocationHandler(BaseHandler):
     allowed_methods = ('GET',)
     model = Location
-    fields = ('name','distance','id', ('type',('name',)))
+    fields = ('name','distance','id', 'address', 'longitude', 'latitude')
 
     def read(self, request, location_id=None):
 
