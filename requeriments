@@ -3,3 +3,4 @@ django
 south
 simplejson
 gunicorn
+django_extensions

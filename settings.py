@@ -111,9 +111,11 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'locations',
+    'api',
     'south',
     'django_extensions',
     'gunicorn',
+    'piston',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -138,5 +140,7 @@ LOGGING = {
         },
     }
 }
+
+AUTHENTICATION_BACKENDS = ('backends.EmailAuthBackend','django.contrib.auth.backends.ModelBackend',)
 
 from local_settings import *
