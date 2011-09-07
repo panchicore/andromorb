@@ -25,5 +25,9 @@ class Location(models.Model):
     def __unicode__(self):
         return self.name
 
+    @property
+    def comments_count(self):
+        return self.comments.all().count()
+
 from south.modelsinspector import add_introspection_rules
 add_introspection_rules([], ["^django\.contrib\.gis\.db\.models\.fields\.PointField"])
