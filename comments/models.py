@@ -11,3 +11,7 @@ class Comment(models.Model):
 
     def __unicode__(self):
         return '%s comments on %s: %s' % (self.user.username, self.location.name, self.comment)
+
+    @property
+    def username(self):
+        return self.user.username
