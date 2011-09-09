@@ -26,7 +26,7 @@ class LocationCommentsHandler(BaseHandler):
     def read(self, request):
         location_id = request.GET.get('lid')
         location = Location.objects.get(id=location_id)
-        return location.comments.all().order_by('date')
+        return location.comments.all().order_by('-date')
 
 
 
