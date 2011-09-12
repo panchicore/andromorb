@@ -117,6 +117,7 @@ INSTALLED_APPS = (
     'django_extensions',
     'gunicorn',
     'piston',
+    'tastypie',
 )
 
 # A sample logging configuration. The only tangible logging

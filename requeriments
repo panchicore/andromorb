@@ -4,3 +4,4 @@ south
 simplejson
 gunicorn
 django_extensions
+django-tastypie

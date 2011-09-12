@@ -32,6 +32,7 @@ class LocationCommentsHandler(BaseHandler):
     
     def create(self, request):
         print request
+        
         attrs = self.flatten_dict(request.POST)
 
         print "OK"
