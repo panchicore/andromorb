@@ -90,7 +90,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'utils.middleware.ShowHeadersMiddleware',
+    #'utils.middleware.ShowHeadersMiddleware',
 )
 
 ROOT_URLCONF = 'andromorb.urls'

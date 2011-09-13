@@ -13,6 +13,8 @@ class LocationResource(ModelResource):
 
     def dehydrate(self, bundle):
         bundle.data['comments_count'] = bundle.obj.comments_count
+        if hasattr(bundle.obj, 'distance'):
+            bundle.data['distance'] = int(bundle.obj.distance.m)
         return bundle
 
     def apply_sorting(self, obj_list, options=None):
