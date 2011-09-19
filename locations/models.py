@@ -18,7 +18,7 @@ class Location(models.Model):
     objects = models.GeoManager()
 
     def save(self, *args, **kwargs):
-        self.location = Point(self.latitude, self.longitude)
+        self.location = Point(self.longitude, self.latitude)
         super(Location, self).save(*args, **kwargs)
 
 
