@@ -117,7 +117,6 @@ INSTALLED_APPS = (
     'south',
     'django_extensions',
     'gunicorn',
-    'piston',
     'tastypie',
     'utils',
 )
