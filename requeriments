@@ -5,3 +5,4 @@ simplejson
 gunicorn
 django_extensions
 django-tastypie
+morning-change
