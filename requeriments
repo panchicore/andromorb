@@ -6,3 +6,4 @@ gunicorn
 django_extensions
 django-tastypie
 morning-change
+second-morning-change
